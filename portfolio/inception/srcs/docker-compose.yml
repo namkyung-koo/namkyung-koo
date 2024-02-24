@@ -1,0 +1,76 @@
+ # < 시작하려는 서비스들을 정의하는 섹션 >
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    build: ./requirements/nginx # 빌드할 도커파일이 위치한 경로를 명시한다.
+    ports:
+      - 443:443
+    volumes:
+      - wordpress_volume:/var/www/html # 볼륨을 매핑한다. [볼륨 이름]:[컨테이너 내 경로]
+    restart: on-failure
+    networks:
+      - network
+    depends_on:
+      wordpress:
+        condition: service_healthy # wordpress 컨테이너가 정상적으로 실행되었을 때 nginx 컨테이너를 실행한다.
+
+  wordpress:
+    image: wordpress
+    container_name: wordpress
+    build: ./requirements/wordpress
+    volumes:
+      - wordpress_volume:/var/www/html
+    restart: on-failure
+    networks:
+      - network
+    env_file:
+      - .env
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wp core is-installed --allow-root || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+  mysql:
+    image: mariadb
+    container_name: mariadb
+    build: ./requirements/mariadb
+    volumes:
+      - mysql_volume:/var/lib/mysql
+    restart: on-failure
+    networks:
+      - network
+    env_file:
+      - .env
+    healthcheck:
+      test: mysqladmin ping -h localhost || exit 1
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+# < 사용하는 볼륨을 정의하는 섹션 >
+volumes:
+  wordpress_volume:
+    driver: local # 로컬 드라이버를 사용하며, 이는 도커가 호스트의 파일시스템에 볼륨을 생성하게 한다.
+    driver_opts: # 드라이버 옵션을 설정하는 섹션
+      type: none
+      device: /home/nakoo/data/wordpress # 실제 볼륨이 위치할 호스트의 경로를 명시한다.
+      o: bind # bind는 이미 존재하는 디렉토리를 볼륨으로 사용하게 한다.
+
+  mysql_volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/nakoo/data/mysql
+      o: bind
+
+# < 사용하는 네트워크를 정의하는 섹션 >
+networks:
+  network:
+    driver: bridge # bridge 드라이버를 사용하며, 이는 도커가 컨테이너 간의 네트워킹을 관리하게 한다.

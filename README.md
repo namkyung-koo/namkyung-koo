@@ -2,7 +2,7 @@
 
 
 <br>
-<li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cardet <sub>(22.07 ~ 24.07)</sub></li>
+<li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cadet <sub>(22.07 ~ 24.07)</sub></li>
 
 ### 🚀 Most Used Languages
 

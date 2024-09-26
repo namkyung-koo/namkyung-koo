@@ -1,16 +1,13 @@
-### Hi there 👋
+## 구남경
 
-<!--
-**namkyung-koo/namkyung-koo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+<br>
+<li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cardet <sub>(22.07 ~ 24.07)</sub></li>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 Most Used Languages
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=namkyung-koo&layout=compact&theme=light)
+
+### 📊 GitHub Stats
+
+![namkyung-koo's github stats](https://github-readme-stats.vercel.app/api?username=namkyung-koo&show_icons=true&theme=light)

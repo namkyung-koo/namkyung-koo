@@ -4,9 +4,10 @@
 <br>
 <li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cadet <sub>(22.07 ~ 24.07)</sub></li>
 
-### 🚀 Most Used Languages
+### I'm currently learning ✏️
+    
+[![My Skills](https://skillicons.dev/icons?i=java,spring)](https://skillicons.dev)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=namkyung-koo&layout=compact&theme=light)
 
 ### 📊 GitHub Stats
 

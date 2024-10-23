@@ -4,8 +4,8 @@
 <br>
 <li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cadet <sub>(22.07 ~ 24.07)</sub></li>
 
-### My Skills ✏️
-    
+### My Skills 🧐
+
 [![My Skills](https://skillicons.dev/icons?i=java,spring,github)](https://skillicons.dev)
 
 

@@ -1,0 +1,6 @@
+NO ./map/texture/gam_north.xpm
+SO ./map/texture/lee_south.xpm
+WE ./map/texture/gon_west.xpm
+EA ./map/texture/gun_east.xpm
+F 168,153,198
+C 200,244,255

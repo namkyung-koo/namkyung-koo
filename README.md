@@ -5,7 +5,7 @@
 
 ### My Skills 🧐
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,github)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,fastapi,github)](https://skillicons.dev)
 
 ### 📊 GitHub Stats & Baekjoon Rank
 

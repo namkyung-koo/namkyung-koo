@@ -1,13 +1,4 @@
-## 구남경
-
-<br>
-<li><a href="https://42seoul.kr/seoul42/main/view">42 Seoul</a> • 7기 Cadet <sub>(22.07 ~ 24.07)</sub></li>
-
-### My Skills 🧐
-
-[![My Skills](https://skillicons.dev/icons?i=python,fastapi,github)](https://skillicons.dev)
-
-### 📊 GitHub Stats & Baekjoon Rank
+### 📊 GitHub Stats
 
 <table>
   <tr>
